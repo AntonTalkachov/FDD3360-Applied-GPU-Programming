@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
     cudaFreeHost(particles);
 
     double iElapsGPU = cpuSecond() - iStart;
-    printf("Computing SAXPY on the GPU with %d streams… Done!\nIt took %f ms\n", nStreams, iElapsGPU*1000);
+    printf("Computing on the GPU with %d streams… Done!\nIt took %f ms\n", nStreams, iElapsGPU*1000);
     
 
 
@@ -112,7 +112,7 @@ int main(int argc, char* argv[])
     cudaFreeHost(particles);
 
     iElapsGPU = cpuSecond() - iStart;
-    printf("Computing SAXPY on the GPU… Done!\nIt took %f ms\n", iElapsGPU*1000);
+    printf("Computing on the GPU… Done!\nIt took %f ms\n", iElapsGPU*1000);
 
     return 0;
     }
